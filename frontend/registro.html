@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="registro.css">
+  <title>Registro</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="titulos">
+      <div class="titulo">Signup Form</div>
+    </div>
+    <div class="formulario">
+      <form class="signup" method="post" action="/home/auth/registro">
+        <div class="login-link">Have an account? <a href="{{ url_for('auth.login') }}">Sign in Now</a></div>
+        <div class="campo">
+          <label for="novo_usuario">Username:</label>
+          <input type="text" placeholder="Username" id="novo_usuario" name="novo_usuario" required>
+        </div>
+        <div class="campo">
+          <label for="nova_senha">Password:</label>
+          <input type="password" placeholder="Password" id="nova_senha" name="nova_senha" required>
+        </div>
+        <div class="campo">
+          <label for="conf_senha">Confirm Password:</label>
+          <input type="password" placeholder="Confirm Password" id="conf_senha" name="conf_senha" required>
+        </div>
+        <div class="campo btn">
+          <div class="botao"></div>
+          <input type="submit" value="signup">         
+        </div>       
+      </form>
+    </div>
+  </div>
+</body>
+</html>
