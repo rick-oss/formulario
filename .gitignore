@@ -1,0 +1,14 @@
+# Ignorar arquivos .pyc
+*.pyc
+
+# Ignorar a pasta __pycache__
+__pycache__/
+
+# Ignorar a pasta migrations 
+/migrations/
+
+# Ignorar a pasta venv
+/venv/
+
+# Ignorar arquivo .flaskenv
+.flaskenv
