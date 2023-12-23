@@ -7,8 +7,6 @@
   <title>Login</title>
 </head>
 <body class="pagina-grid">
-  {% set hide_menu=True %} {% set hide_footer=True %} 
-  {% extends 'base.html' %} {% block conteudo %}  
   <style>
     .mensagem {
       color: red;
@@ -25,10 +23,10 @@
     </div>
     <div class="formulario">
       <form class="login" method="Post"> 
-        <div class='signup-link'>Not a Member? <a href="{{ url_for('auth.registro') }}">Signup Now</a></div>
+        <div class='signup-link'>Not a Member? <a href="{{ url_for('forms.registro') }}">Signup Now</a></div>
         <div class="campo">
-          <label for="usuario">Username:</label>
-          <input type="text" placeholder="Username"  id="usuario" name="usuario" required>
+          <label for="usuario">Email Adress:</label>
+          <input type="text" placeholder="Email Adress"  id="Email" name="Email" required>
         </div>
         <div class="campo">
           <label for="senha">Password:</label>
@@ -42,6 +40,5 @@
       </form>
     </div>
   </div>
-  {% endblock %}
 </body>
 </html>

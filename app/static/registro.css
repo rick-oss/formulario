@@ -1,4 +1,12 @@
-/* Estilizaçao do layout da pagina */
+* {
+    font-family: 'Poppins:ital,wght@1,200&display=swap', sans-serif;
+    font-style: italic;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza do layout da pagina */
 html,
 body {
     height: 100%;
@@ -19,22 +27,23 @@ input[type="text"] {
     color: white;
 }
 
-
-/* Estilizaçao do conteiner principal */
+/* Estiliza do conteiner principal */
 .wrapper {
     max-width: 390px;
     padding: 30px;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: -10px 15px 20px rgba(0, 0, 0, 1);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 1);
     background: #000a18;
 }
 
+/* Estiliza do layout do titulo */
 .wrapper .titulos {
     display: flex;
     width: 200%;
 }
 
+/* Estiliza do titulo */
 .wrapper .titulo {
     width: 50%;
     font-size: 35px;
@@ -43,26 +52,13 @@ input[type="text"] {
     color: white;
 }
 
+/* Estiliza do formulario */
 .wrapper .formulario {
     display: inline;
     width: 100%;
 }
 
-.formulario form .login-link {
-    text-align: center;
-    margin-top: 25px;
-    color: white;
-}
-
-.formulario form .login-link a {
-    text-decoration: none;
-    color: #1a75ff;
-}
-
-.formulario form .login-link a:hover {
-    text-decoration: underline;
-}
-
+/* Estiliza dos campos de entrada */
 .formulario form .campo {
     height: 40px;
     width: 100%;
@@ -80,6 +76,7 @@ input[type="text"] {
     font-size: 18px;
 }
 
+/* Estiliza dos focus de campo e placeholder */
 .formulario form .campo input:focus {
     border-color: rgb(20, 122, 156);
 }
@@ -88,12 +85,31 @@ input[type="text"] {
     color: rgb(20, 122, 156);
 }
 
+/* Estiliza de layout dos links */
+.formulario form .login-link {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+}
+
+/* Retira e recoloca a underline no link durante o hover */
+.formulario form .login-link a {
+    text-decoration: none;
+    color: #1a75ff;
+}
+
+.formulario form .login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza de layout do botao de registro */
 form .btn {
     height: 50px;
     width: 100%;
     position: relative;
 }
 
+/* Estiliza o botao de registro */
 form .btn .botao {
     margin-top: 10px;
     height: 100%;
@@ -105,6 +121,7 @@ form .btn .botao {
     border-radius: 10px;
 }
 
+/* Estiliza o botão de envio input */
 form .btn input[type="submit"] {
     height: 100%;
     width: 100%;

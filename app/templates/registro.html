@@ -7,8 +7,6 @@
   <title>Registro</title>
 </head>
 <body>
-  {% set hide_menu=True %} {% set hide_footer=True %}
-  {% extends 'base.html' %} {% block conteudo %}
   <style>
     .mensagem {
       color: red;
@@ -24,11 +22,11 @@
       <div class="titulo">Signup Form</div>
     </div>
     <div class="formulario">
-      <form class="signup" method="post" action="/home/auth/registro">
-        <div class="login-link">Have an account? <a href="{{ url_for('auth.login') }}">Sign in Now</a></div>
+      <form class="signup" method="post" action="/forms/registro">
+        <div class="login-link">Have an account? <a href="{{ url_for('forms.login') }}">Sign in Now</a></div>
         <div class="campo">
-          <label for="novo_usuario">Username:</label>
-          <input type="text" placeholder="Username" id="novo_usuario" name="novo_usuario" required>
+          <label for="novo_usuario">Email Adress:</label>
+          <input type="text" placeholder="Email Adress" id="novo_email" name="novo_email" required>
         </div>
         <div class="campo">
           <label for="nova_senha">Password:</label>
@@ -45,6 +43,5 @@
       </form>
     </div>
   </div>
-  {% endblock %}
 </body>
 </html>
