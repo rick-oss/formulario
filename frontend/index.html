@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="login.css">
-  <title>Login</title>
+  <link rel="stylesheet" href="registro.css">
+  <title>Registro</title>
 </head>
-<body class="pagina-grid">
+<body>
   <div class="wrapper">
     <div class="titulos">
-      <div class="titulo">Login Form</div>
+      <div class="titulo">Signup Form</div>
     </div>
     <div class="formulario">
-      <form class="login" method="Post"> 
-        <div class='signup-link'>Not a Member? <a href="registro.html">Signup Now</a></div>
+      <form class="signup" method="post">
+        <div class="login-link">Have an account? <a href="login.html">Sign in Now</a></div>
         <div class="campo">
-          <label for="usuario">Username:</label>
-          <input type="text" placeholder="Username"  id="usuario" name="usuario" required>
+          <label for="novo_usuario">Email Adress:</label>
+          <input type="text" placeholder="Email Adress" id="novo_usuario" name="novo_usuario" required>
         </div>
         <div class="campo">
-          <label for="senha">Password:</label>
-          <input type="password" placeholder="Password" id="senha" name="senha" required>  
+          <label for="nova_senha">Password:</label>
+          <input type="password" placeholder="Password" id="nova_senha" name="nova_senha" required>
         </div>
-        <div class="forgot-link"><a href="#">Forgot Password?</a></div>
-        <div class="campo btn">  
+        <div class="campo">
+          <label for="conf_senha">Confirm Password:</label>
+          <input type="password" placeholder="Confirm Password" id="conf_senha" name="conf_senha" required>
+        </div>
+        <div class="campo btn">
           <div class="botao"></div>
-          <input type="submit" value="Login">
-        </div>
+          <input type="submit" value="signup">         
+        </div>       
       </form>
     </div>
   </div>
